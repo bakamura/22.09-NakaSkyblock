@@ -1,0 +1,19 @@
+modLoader="javafml" #mandatory
+loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+
+[[mods]] #mandatory
+
+modId="nakaskyblock" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Naka's Skyblock" #mandatory
+logoFile="nakaSkyblockLogo.png" #optional
+credits="Me, Myself" #optional
+authors="Nakanzaki" #optional
+description='''
+A mod that creates RPG-like properties in minecraft.
+-Stats
+-Skills
+-Bosses
+-Domains
+'''
