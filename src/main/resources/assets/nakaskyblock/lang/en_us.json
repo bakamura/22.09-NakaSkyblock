@@ -1,0 +1,21 @@
+{
+  "item.nakaskyblock.compressed_coal": "Compressed Coal",
+  "item.nakaskyblock.compressed_iron": "Compressed Iron",
+  "item.nakaskyblock.compressed_gold": "Compressed Gold",
+  "item.nakaskyblock.compressed_redstone": "Compressed Redstone",
+  "item.nakaskyblock.compressed_lapis_lazuli": "Compressed Lapis Lazuli",
+  "item.nakaskyblock.compressed_emerald": "Compressed Emerald",
+  "item.nakaskyblock.compressed_diamond": "Compressed Diamond",
+  "item.nakaskyblock.compressed_glowstone": "Compressed Glowstone",
+  "item.nakaskyblock.compressed_quartz": "Compressed Quartz",
+  "item.nakaskyblock.compressed_netherite": "Compressed Netherite",
+
+  "item.nakaskyblock.compressed_dirt": "Compressed Dirt",
+  "item.nakaskyblock.compressed_cobblestone": "Compressed Cobblestone",
+  "item.nakaskyblock.compressed_sand": "Compressed Sand",
+  "item.nakaskyblock.compressed_gravel": "Compressed Gravel",
+  "item.nakaskyblock.compressed_ice": "Compressed Ice",
+  "item.nakaskyblock.compressed_netherrack": "Compressed Netherrack",
+  "item.nakaskyblock.compressed_endstone": "Compressed Endstone",
+  "item.nakaskyblock.compressed_obsidian": "Compressed Obsidian"
+}
