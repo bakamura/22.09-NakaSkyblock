@@ -10,12 +10,12 @@
   "item.nakaskyblock.compressed_quartz": "Compressed Quartz",
   "item.nakaskyblock.compressed_netherite": "Compressed Netherite",
 
-  "item.nakaskyblock.compressed_dirt": "Compressed Dirt",
-  "item.nakaskyblock.compressed_cobblestone": "Compressed Cobblestone",
-  "item.nakaskyblock.compressed_sand": "Compressed Sand",
-  "item.nakaskyblock.compressed_gravel": "Compressed Gravel",
-  "item.nakaskyblock.compressed_ice": "Compressed Ice",
-  "item.nakaskyblock.compressed_netherrack": "Compressed Netherrack",
-  "item.nakaskyblock.compressed_endstone": "Compressed Endstone",
-  "item.nakaskyblock.compressed_obsidian": "Compressed Obsidian"
+  "block.nakaskyblock.compressed_dirt_block": "Compressed Dirt",
+  "block.nakaskyblock.compressed_cobblestone_block": "Compressed Cobblestone",
+  "block.nakaskyblock.compressed_sand_block": "Compressed Sand",
+  "block.nakaskyblock.compressed_gravel_block": "Compressed Gravel",
+  "block.nakaskyblock.compressed_ice_block": "Compressed Ice",
+  "block.nakaskyblock.compressed_netherrack_block": "Compressed Netherrack",
+  "block.nakaskyblock.compressed_endstone_block": "Compressed Endstone",
+  "block.nakaskyblock.compressed_obsidian_block": "Compressed Obsidian"
 }

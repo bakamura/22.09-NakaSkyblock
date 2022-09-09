@@ -1,5 +1,6 @@
 package com.Nakanzaki.nakaSkyblock;
 
+import com.Nakanzaki.nakaSkyblock.init.BlockInit;
 import com.Nakanzaki.nakaSkyblock.init.ItemInit;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -13,5 +14,6 @@ public class NakaSkyblock {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
     }
 }

@@ -25,7 +25,7 @@ public class ItemInit {
     public static final RegistryObject<Item> COMPRESSED_QUARTZ = ITEMS.register("compressed_quartz", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
     public static final RegistryObject<Item> COMPRESSED_NETHERITE = ITEMS.register("compressed_netherite", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
-    // //Blocks
+    // //Blocks - Can be automatized?
 
     //Mining
     public static final RegistryObject<BlockItem> COMPRESSED_DIRT_BLOCK_ITEM = ITEMS.register("compressed_dirt_block", () -> new BlockItem(BlockInit.COMPRESSED_DIRT_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
