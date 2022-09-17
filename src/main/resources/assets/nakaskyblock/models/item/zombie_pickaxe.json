@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "nakaskyblock:items/zombie_pickaxe"
+  }
+}
