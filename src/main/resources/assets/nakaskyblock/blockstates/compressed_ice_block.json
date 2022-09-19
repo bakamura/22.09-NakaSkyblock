@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "nakaskyblock:block/compressed_ice_block"
+      "model": "nakaskyblock:block/miningcollection/collection/compressed_ice_block"
     }
   }
 }

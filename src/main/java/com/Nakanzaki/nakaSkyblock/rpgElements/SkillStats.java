@@ -26,7 +26,7 @@ public class SkillStats {
     public int smithingLv() { return lvCalc(smithingXp); }
 
     //mining
-    public float miningSpeed() { return 1+ (combatStats.strength / 100)}
+    public float miningSpeed() { return 1+ (combatStats.strength / 100); }
     public float fortune;
     public int procFortune() { return procDuplicator(fortune); }
     public float pristine;

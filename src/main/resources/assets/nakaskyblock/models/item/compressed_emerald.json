@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nakaskyblock:items/compressed_emerald"
+    "layer0": "nakaskyblock:items/miningcollection/collection/compressed_emerald"
   }
 }

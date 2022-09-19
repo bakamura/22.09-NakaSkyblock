@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nakaskyblock:items/compressed_glowstone_dust"
+    "layer0": "nakaskyblock:items/miningcollection/collection/compressed_glowstone_dust"
   }
 }

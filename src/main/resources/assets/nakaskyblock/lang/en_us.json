@@ -1,5 +1,10 @@
 {
-  "itemGroup.nakaskyblock": "Collections Tab",
+  "itemGroup.combatcollection": "Combat Collection",
+  "itemGroup.miningcollection": "Mining Collection",
+  "itemGroup.foragingcollection": "Foraging Collection",
+  "itemGroup.farmingcollection": "Farming Collection",
+  "itemGroup.fishingcollection": "Fishing Collection",
+  "itemGroup.smithingcollection": "Smithing Collection",
 
   "item.nakaskyblock.compressed_coal": "Compressed Coal",
   "item.nakaskyblock.compressed_iron": "Compressed Iron",
@@ -20,6 +25,11 @@
   "block.nakaskyblock.compressed_netherrack_block": "Compressed Netherrack",
   "block.nakaskyblock.compressed_end_stone_block": "Compressed Endstone",
   "block.nakaskyblock.compressed_obsidian_block": "Compressed Obsidian",
+
+  "item.nakaskyblock.leaflet_helmet": "Leaflet Helmet",
+  "item.nakaskyblock.leaflet_chestplate": "Leaflet Chestplate",
+  "item.nakaskyblock.leaflet_leggings": "Leaflet Leggings",
+  "item.nakaskyblock.leaflet_boots": "Leaflet Boots",
 
   "item.nakaskyblock.rogue_sword": "Rogue Sword",
   "item.nakaskyblock.zombie_pickaxe": "Zombie Pickaxe",

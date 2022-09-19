@@ -19,11 +19,40 @@ public class NakaSkyblock {
         BlockInit.BLOCKS.register(bus);
     }
 
-    // Change into mining only collection?
-    public static final CreativeModeTab TAB_COLLECTIONS = new CreativeModeTab(MODID) {
+    public static final CreativeModeTab TAB_COMBAT = new CreativeModeTab("combatcollection") {
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.ROGUE_SWORD.get().getDefaultInstance();
+        }
+    };
+    public static final CreativeModeTab TAB_MINING = new CreativeModeTab("miningcollection") {
         @Override
         public ItemStack makeIcon() {
             return ItemInit.COMPRESSED_DIAMOND.get().getDefaultInstance();
+        }
+    };
+    public static final CreativeModeTab TAB_FORAGING = new CreativeModeTab("foragingcollection") {
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.COMPRESSED_APPLE.get().getDefaultInstance();
+        }
+    };
+    public static final CreativeModeTab TAB_FARMING = new CreativeModeTab("farmingcollection") {
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.SEEDY_HOE.get().getDefaultInstance();
+        }
+    };
+    public static final CreativeModeTab TAB_FISHING = new CreativeModeTab("fishingcollection") {
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.COMPRESSED_LAPIS_LAZULI.get().getDefaultInstance();
+        }
+    };
+    public static final CreativeModeTab TAB_SMITHING = new CreativeModeTab("smithingcollection") {
+        @Override
+        public ItemStack makeIcon() {
+            return ItemInit.COMPRESSED_IRON.get().getDefaultInstance();
         }
     };
 }

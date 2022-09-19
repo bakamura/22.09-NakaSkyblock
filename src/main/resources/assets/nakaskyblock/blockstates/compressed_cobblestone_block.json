@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "nakaskyblock:block/compressed_cobblestone_block"
+      "model": "nakaskyblock:block/miningcollection/collection/compressed_cobblestone_block"
     }
   }
 }

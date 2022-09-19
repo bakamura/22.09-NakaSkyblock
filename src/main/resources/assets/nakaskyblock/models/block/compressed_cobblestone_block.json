@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "nakaskyblock:blocks/compressed_cobblestone_block"
-  }
-}

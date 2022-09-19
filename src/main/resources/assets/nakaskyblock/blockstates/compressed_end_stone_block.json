@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "nakaskyblock:block/compressed_end_stone_block"
+      "model": "nakaskyblock:block/miningcollection/collection/compressed_end_stone_block"
     }
   }
 }

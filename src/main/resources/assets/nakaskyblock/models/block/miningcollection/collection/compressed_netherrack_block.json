@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "nakaskyblock:blocks/miningcollection/collection/compressed_netherrack_block"
+  }
+}

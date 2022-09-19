@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "nakaskyblock:block/compressed_netherrack_block"
+      "model": "nakaskyblock:block/miningcollection/collection/compressed_netherrack_block"
     }
   }
 }

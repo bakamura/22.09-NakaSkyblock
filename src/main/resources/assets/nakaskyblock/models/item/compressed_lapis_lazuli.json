@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nakaskyblock:items/compressed_lapis_lazuli"
+    "layer0": "nakaskyblock:items/miningcollection/collection/compressed_lapis_lazuli"
   }
 }
