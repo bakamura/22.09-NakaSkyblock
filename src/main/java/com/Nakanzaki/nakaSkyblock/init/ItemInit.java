@@ -82,24 +82,24 @@ public class ItemInit {
 
     //Foraging
     public  static final RegistryObject<ArmorItem> LEAFLET_HELMET = ITEMS.register("leaflet_helmet",
-            () -> new ArmorItem(ArmorTiers.ADAMANTIUM_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
     public  static final RegistryObject<ArmorItem> LEAFLET_CHESTPLATE = ITEMS.register("leaflet_chestplate",
-            () -> new ArmorItem(ArmorTiers.ADAMANTIUM_ARMOR, EquipmentSlot.CHEST, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.CHEST, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
     public  static final RegistryObject<ArmorItem> LEAFLET_LEGGINGS = ITEMS.register("leaflet_leggings",
-            () -> new ArmorItem(ArmorTiers.ADAMANTIUM_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
     public  static final RegistryObject<ArmorItem> LEAFLET_BOOTS = ITEMS.register("leaflet_boots",
-            () -> new ArmorItem(ArmorTiers.ADAMANTIUM_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
 
     //Armor Tiers
     public static class ArmorTiers {
-        public static final ArmorMaterial ADAMANTIUM_ARMOR = new ArmorMat(
-                "Adamantium",
+        public static final ArmorMaterial LEAFLET_ARMOR = new ArmorMat(
+                "leaflet",
                 1000,
-                new int[] { 500, 500, 500, 500},
+                new int[] { 500, 800, 700, 400},
                 300,
-                SoundEvents.ARMOR_EQUIP_DIAMOND,
-                0.0f,
-                1,
+                SoundEvents.ARMOR_EQUIP_LEATHER,
+                0f,
+                1f,
                 () -> Ingredient.EMPTY
         );
     }

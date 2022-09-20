@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "nakaskyblock:items/leafletset/leaflet_helmet"
+    "layer0": "nakaskyblock:items/foragingcollection/leafletset/leaflet_helmet"
   }
 }
