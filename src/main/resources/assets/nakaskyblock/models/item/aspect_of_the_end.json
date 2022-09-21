@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "nakaskyblock:items/combatcollection/enderpearl/aspect_of_the_end"
+  }
+}

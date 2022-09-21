@@ -1,6 +1,9 @@
 package com.Nakanzaki.nakaSkyblock.init;
 
 import com.Nakanzaki.nakaSkyblock.NakaSkyblock;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -43,5 +46,11 @@ public class BlockInit {
         RegistryObject<T> block = BLOCKS.register(name, supplier);
         ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), properties));
         return block;
+    }
+
+    public static class Tags {
+        public static final TagKey<Block> NEEDS_MITHRIL_TOOL =
+                BlockTags.create(new ResourceLocation(NakaSkyblock.MODID, "mineable/needs_mithril_tool"));
+
     }
 }

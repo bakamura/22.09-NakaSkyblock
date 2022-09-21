@@ -1,8 +1,8 @@
 package com.Nakanzaki.nakaSkyblock.init;
 
+import com.Nakanzaki.nakaSkyblock.ItemAbilities.AspectOfTheEnd;
 import com.Nakanzaki.nakaSkyblock.NakaSkyblock;
 import com.Nakanzaki.nakaSkyblock.base.ArmorMat;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -49,6 +49,8 @@ public class ItemInit {
     //Swords
     public static final RegistryObject<SwordItem> ROGUE_SWORD = ITEMS.register("rogue_sword",
             () -> new SwordItem(ToolTiers.ADAMANTIUM_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_COMBAT)));
+    public static final RegistryObject<SwordItem> ASPECT_OF_THE_END = ITEMS.register("aspect_of_the_end",
+            () -> new AspectOfTheEnd(ToolTiers.ADAMANTIUM_TOOL));
 
     //Pickaxes
     public static final RegistryObject<PickaxeItem> ZOMBIE_PICKAXE = ITEMS.register("zombie_pickaxe",
@@ -82,20 +84,20 @@ public class ItemInit {
 
     //Foraging
     public  static final RegistryObject<ArmorItem> LEAFLET_HELMET = ITEMS.register("leaflet_helmet",
-            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorSets.LEAFLET_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
     public  static final RegistryObject<ArmorItem> LEAFLET_CHESTPLATE = ITEMS.register("leaflet_chestplate",
-            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.CHEST, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorSets.LEAFLET_ARMOR, EquipmentSlot.CHEST, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
     public  static final RegistryObject<ArmorItem> LEAFLET_LEGGINGS = ITEMS.register("leaflet_leggings",
-            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorSets.LEAFLET_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
     public  static final RegistryObject<ArmorItem> LEAFLET_BOOTS = ITEMS.register("leaflet_boots",
-            () -> new ArmorItem(ArmorTiers.LEAFLET_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new ArmorItem(ArmorSets.LEAFLET_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
 
     //Armor Tiers
-    public static class ArmorTiers {
+    public static class ArmorSets {
         public static final ArmorMaterial LEAFLET_ARMOR = new ArmorMat(
                 "leaflet",
                 1000,
-                new int[] { 500, 800, 700, 400},
+                new int[] { 5, 8, 7, 4 },
                 300,
                 SoundEvents.ARMOR_EQUIP_LEATHER,
                 0f,
