@@ -1,6 +1,6 @@
 package com.Nakanzaki.nakaSkyblock.init;
 
-import com.Nakanzaki.nakaSkyblock.ItemAbilities.AspectOfTheEnd;
+import com.Nakanzaki.nakaSkyblock.ItemAbilities.TeleportAbility;
 import com.Nakanzaki.nakaSkyblock.NakaSkyblock;
 import com.Nakanzaki.nakaSkyblock.base.ArmorMat;
 import net.minecraft.sounds.SoundEvents;
@@ -48,32 +48,32 @@ public class ItemInit {
 
     //Swords
     public static final RegistryObject<SwordItem> ROGUE_SWORD = ITEMS.register("rogue_sword",
-            () -> new SwordItem(ToolTiers.ADAMANTIUM_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_COMBAT)));
+            () -> new SwordItem(ToolTiers.MITHRIL_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_COMBAT)));
     public static final RegistryObject<SwordItem> ASPECT_OF_THE_END = ITEMS.register("aspect_of_the_end",
-            () -> new AspectOfTheEnd(ToolTiers.ADAMANTIUM_TOOL));
+            () -> new TeleportAbility(50, 2, 5, NakaSkyblock.TAB_COMBAT));
 
     //Pickaxes
     public static final RegistryObject<PickaxeItem> ZOMBIE_PICKAXE = ITEMS.register("zombie_pickaxe",
-            () -> new PickaxeItem(ToolTiers.ADAMANTIUM_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_COMBAT)));
+            () -> new PickaxeItem(ToolTiers.MITHRIL_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_COMBAT)));
 
     //Shovels
     public static final RegistryObject<ShovelItem> FLINT_SHOVEL = ITEMS.register("flint_shovel",
-            () -> new ShovelItem(ToolTiers.ADAMANTIUM_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_MINING)));
+            () -> new ShovelItem(ToolTiers.MITHRIL_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_MINING)));
 
     //Axes
     public static final RegistryObject<AxeItem> JUNGLE_AXE = ITEMS.register("jungle_axe",
-            () -> new AxeItem(ToolTiers.ADAMANTIUM_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
+            () -> new AxeItem(ToolTiers.MITHRIL_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_FORAGING)));
 
     //Hoes
     public static final RegistryObject<HoeItem> SEEDY_HOE = ITEMS.register("seedy_hoe",
-            () -> new HoeItem(ToolTiers.ADAMANTIUM_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_FARMING)));
+            () -> new HoeItem(ToolTiers.MITHRIL_TOOL, 10, 0.4f, new Item.Properties().tab(NakaSkyblock.TAB_FARMING)));
 
     //Tool Tiers
     public static class ToolTiers {
-        public static final Tier ADAMANTIUM_TOOL = new ForgeTier(
+        public static final Tier MITHRIL_TOOL = new ForgeTier(
                 5,
                 2048,
-                2.0f,
+                1.0f,
                 0,
                 350,
                 null,

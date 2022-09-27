@@ -8,27 +8,29 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class AspectOfTheEnd extends SwordItem {
-    public AspectOfTheEnd(Tier tier) {
-        super(tier, 20, 0.5f, new Item.Properties().tab(NakaSkyblock.TAB_COMBAT));
+public class TeleportAbility extends SwordItem {
+    public TeleportAbility(int damage, float attackSpeed, double teleportDistance, CreativeModeTab tab) {
+        super(Tiers.DIAMOND, damage - 4, attackSpeed - 4f, new Item.Properties().tab(tab));
+        this.teleportDistance = teleportDistance;
     }
+    private static float weaponDmg;
+    private static double teleportDistance;
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
-        super.appendHoverText(stack, level, components, flag);
+        //super.appendHoverText(stack, level, components, flag);
 
-        components.add(Component.translatable(NakaSkyblock.MODID + ".weapon_dmg").append(Component.literal("\u00A7c20")));
-        if(Screen.hasShiftDown()) components.add(Component.literal("Lore Stuff"));
+        components.add(Component.translatable(NakaSkyblock.MODID + ".weapon_dmg").append(Component.literal("\u00A7c" + (int) (getDamage() + 1))));
+        if(Screen.hasShiftDown()) components.add(Component.literal("\u00A7oLore Stuff"));
+        components.add(Component.translatable(NakaSkyblock.MODID + ".tier_rare").append(Component.translatable(NakaSkyblock.MODID + ".weapon_sword")));
     }
 
     @Override
@@ -39,12 +41,10 @@ public class AspectOfTheEnd extends SwordItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(InteractionHand.MAIN_HAND == hand && !level.isClientSide) {
-            player.sendSystemMessage(Component.literal(player.getViewVector(1).x + ", ").append(player.getViewVector(1).y + ", ").append(player.getViewVector(1).z + ""));
-            player.hurtMarked = true;
             player.teleportTo(
-                    player.position().x + 5.0 * player.getViewVector(1).x,
-                    player.position().y + 1 + 5.0 * player.getViewVector(1).y,
-                    player.position().z + 5.0 * player.getViewVector(1).z);
+                    player.position().x + teleportDistance * player.getViewVector(1).x,
+                    player.position().y + 1 + teleportDistance * player.getViewVector(1).y,
+                    player.position().z + teleportDistance * player.getViewVector(1).z);
         }
         return super.use(level, player, hand);
     }
